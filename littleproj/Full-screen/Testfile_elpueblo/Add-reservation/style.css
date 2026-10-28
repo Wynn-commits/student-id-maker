@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  overflow: hidden;
+  background-image: url("/Images/backgrounddorm1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 2000;
+  width: 100%;
+}
+.brand-container {
+  flex-shrink: 0;
+}
+
+.black-container img {
+  background-color: black;
+  display: block;
+  width: 120px;
+  height: auto;
+  border-radius: 20px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  font-size: 1rem;
+  min-height: 70px;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  position: sticky;
+  left: 0;
+  top: 0;
+  width: 220px;
+  background: black;
+  color: white;
+  height: 100vh;
+  padding: 20px;
+  padding-left: 10px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.sidebar img {
+  width: 30px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 12px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+  color: black;
+  background: #ff6a00;
+}
+
+.active {
+  color: black;
+  background-color: #ff6a00;
+  text-decoration: none;
+  padding: 12px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.active:hover {
+  background-color: gray;
+  color: white;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -50px;
+}
+
+.form-container {
+  background: white;
+  padding: 50px 50px 50px 30px;
+  width: 100%;
+  max-width: 450px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.form-container h2 {
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.naming-container {
+  display: flex;
+  gap: 10px;
+}
+
+.naming-container label {
+  flex: 1;
+}
+
+label span {
+  font-size: 14px;
+  color: #555;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+input:focus {
+  border-color: black;
+}
+
+button {
+  background: linear-gradient(90deg, #ff4e00, #ec9f05);
+  color: white;
+  border: none;
+  padding: 12px;
+  margin-top: 40px;
+  border-radius: 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+}

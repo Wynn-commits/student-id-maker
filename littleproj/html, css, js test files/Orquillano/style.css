@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    background-image: url('Black-Background-Images-Free-Download(1)-Copy.jpg');
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: clamp(1.5rem, 4vw, 2.8rem);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1350px;
+    margin: auto;
+    padding: 20px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.card,
+.no-hover-card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    max-width: 100%;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.02) translateY(5px);
+}
+
+.shoe-name {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.price {
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+.real-price {
+    display: inline-block;
+    color: gray;
+    text-decoration: line-through;
+    font-size: 0.9rem;
+}
+
+.discount {
+    display: inline-block;
+    color: coral;
+    font-size: 0.9rem;
+}
+
+.image-container {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image,
+.hidden-image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.hidden-image {
+    display: none;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    inset: 0;
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    inset: 0;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    animation: Erwin 0.3s ease;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    width: 350px;
+    height: auto;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 5px 5px 12px rgba(255, 255, 255, 0.416),
+                -5px -5px 12px rgba(255, 255, 255, 0.416);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.modal-description {
+    animation: Connie 0.6s ease-in-out;
+}
+
+.image-container-modal {
+    width: 180px;
+    height: 180px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 12px rgba(255, 255, 255, 0.416),
+                -5px -5px 12px rgba(255, 255, 255, 0.416);
+    transition: all 0.3s ease;
+}
+
+.image-container-modal:hover {
+    transform: scale(1.02);
+}
+
+.image-container-modal img {
+    width: 100%;
+    height: 100%;
+}
+
+.close-btn {
+    font-size: 14px;
+    color: white;
+    background-color: black;
+    width: 40%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.close-btn:hover {
+    transform: scale(1.07);
+}
+
+@keyframes Erwin {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+
+@keyframes Connie {
+    from { transform: translateX(-320px); }
+    to { transform: translateX(0); }
+}
+
+/* By: Erwin Gail O. Orquillano */

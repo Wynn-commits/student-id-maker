@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    background-image: url('musikaa.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+nav{
+    padding: 10px 13px;
+}
+
+.brand-container{
+    display: inline-block;
+}
+
+.link-container{
+    float: right;
+    position: relative;
+    top: 13px;
+    right: 10px;
+}
+
+.links{
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    margin: 10px;
+    padding: 5px 15px;
+    transition: 0.3s ease;
+}
+
+.links:hover{
+    color: gray;
+}
+
+.btn-link{
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+    margin: 10px;
+    padding: 5px 15px;
+    background-color: white;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition: 0.3s ease;
+}
+
+.btn-link:hover{
+    background-color: gainsboro;
+    border-top-right-radius: 30px;
+}
+
+.main-container{
+    padding: 15px 13%;
+    color: white;
+    margin-top: 13%;
+    max-width: 600px;
+}
+.welcome{
+    margin-bottom: -10px;
+}
+p{
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+h1{
+    margin: 0;
+    font-style: italic;
+    font-size: 50px;
+    font-weight: 400;
+    margin-top: -5px;
+}
+
+.btn-container{
+    margin-right: 10px;
+    position: relative;
+    top: 120px;
+    transition: 0.3s ease;
+}
+
+.btn-start-link{
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+    margin: 10px;
+    padding: 5px 35px;
+    background-color: white;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition: 0.3s ease;
+}
+
+.btn-start-link:hover{
+    border-top-right-radius: 30px;
+    background-color: gainsboro;
+}

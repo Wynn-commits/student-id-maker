@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    /*
+
+    box-sizing: border-box; // mo stay sa stable width 
+    z-index: 1; // kani kay mo priority ni eh guwas jud una2x ug mag ovelapp ug design 
+
+    display: flex; // pang control sa alignment. default at main axis(horizontal ba) 
+    flex-direction: column; // alignment sa form kay pa column (ma himong vertical unlike default display flex
+    flex-wrap: wrap; // basta kay eh sigo ni tanan child on one line only. If di ma sigo di niya eh force iyang self na mo sigo sa kinabuhi niya :((
+    flex: 1; // kani kay mo fill up siya sa available space 
+    flex-grow: 1; // kani kay mo fill up siya tanan sa space ug naay space pa 
+    gap: 10px; // mag hatag boundaries to each other (aray ko) 
+    justify-content: arrange main axis based on your command. 
+    Examples: 
+    center - centers the main axis
+    row - default positioning
+    column - arranges by column 
+    flex-end - arranges at last of the square
+    space-between - arranges evenly in the square around (arrange tunga2x ang first ug last)
+    space-around - arranges evenly with spaces around
+    space-evenly - spaces around evenly
+    order - places where it would appear first. the counting starts from 0.
+
+    align-items: arranges cross axis(vertical naman ni)
+    Examples: same example as in above 
+
+    align-content: only works when you have flex-wrap
+    Examples: naa nas babaw 
+
+    align-self: align siyang self, understandable na
+    Examples: naa nas babaw 
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  tag 4 ra kada column sa grid 
+    
+    background-attachment: fixed; /*para ang background di mo expand ug ahat*/
+    /*overflow-y: auto; */ /* maka scroll pa vertical
+    scroll-behavior: smooth; /*para smooth scroll
+
+
+    /*basta may tranform ka, dapat ang unsa pay ipa hover nimo eh tagsa tanan ug declare dri sa transition*/
+
+    /* auto-fit -- fits as many as possible columns as possible in screen
+
+    minmax(minimum, maximum):
+    clamp(minimum, preferred, max):
+    min - never smaller than the minimum,
+    preferred  - preferred size
+    max - never larger than the maximum. 
+
+    min() - chooses the minimum value of the inside properties.
+    max() - other way around
+
+    1rem ~ 16px
+    1vw = 1% of the viewport width
+    
+    inset: 0; - short form of top, left, right, bottom to 0.
+    
+    */
+
+    /* <section></section> - it means this page is about one specific topic 
+        compare to div: div is just a container without a meaning, unlike section, it has a meaning
+        Allows also like <a href="#about" to go to the "About section" which is useful.
+        <header> represents introductory content for a page or section. Used for logo, brand/page title, navbar
+        <main> contains the main content of the page. Only one main must be in the page.
+        <footer> - Represents the bottom information of a page.
+        Used for: Copyright, Social links, Contact info, Legal info
+    */
+
+    /* @keyframes is a CSS rule used to define an animation sequence.
+
+It describes how an element should change styles over time.
+
+You specify different "frames" (like in a movie) at certain percentages of the animation’s duration (0% = start, 100% = end) */
+
+    /* animation-timeline: view(auto auto);
+    - first auto means where the animation stops, then the second
+    one where it will start. 
+    
+    animation: headlineAppear both; - both used for the animated thing won't appear yet before the animation starts.
+
+    vertical-align: middle;  aligns with text baseline 
+
+    @media - used for creating responsive design.
+    - makes an effect when condition is true
+    - can use for ex: (500px <= width <= 70px), and/or, min or max-aspect-ratio, or any conditions
+    max or min-width media queries: Desktops - 1440px, tablet - 1024px, phones - 600px
+
+    /* Amashle - beautiful one meaning */
+}

@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  overflow: hidden;
+  background-image: url("/Images/backgrounddorm1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 2000;
+  width: 100%;
+}
+.brand-container {
+  flex-shrink: 0;
+}
+.black-container img {
+  background-color: black;
+  display: block;
+  width: 120px;
+  height: auto;
+  border-radius: 20px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  font-size: 1rem;
+  min-height: 70px;
+}
+.auth-buttons {
+  display: flex;
+  gap: 15px;
+  flex-shrink: 0;
+}
+.back-btn {
+  background: linear-gradient(90deg, #ff4e00 55%, #ec9f05 100%);
+  color: white;
+  font-size: 1rem;
+  font-weight: lighter;
+  padding: 8px 25px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+.back-btn img{
+    width: 20px;
+    height: 25px;
+    object-fit: cover;
+    object-position: center;
+}
+.back-btn:hover {
+  background: white;
+  color: #ec9f05;
+  border: 1px #ec9f05 solid;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: clamp(16px, 4vw, 24px);
+  min-height: 100vh;
+  padding: clamp(16px, 4vw, 32px);
+}
+
+.orange-col {
+  color: #ff4e00;
+}
+
+.form-container {
+  background-color: white;
+  padding: clamp(20px, 4vw, 30px);
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  animation: textfade-slide 1.2s ease forwards;
+}
+
+.form-container h2 {
+  margin-bottom: 15px;
+  font-size: 34px;
+  letter-spacing: 1.5px;
+}
+
+.form-container p{
+  margin-bottom: 15px
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  margin: 5px 0;
+  border-radius: 15px;
+  border: 2px solid gray;
+}
+.input-container input {
+  flex: 1;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.input-container img{
+  width: 25px;
+}
+
+input {
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+label span {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.636);
+}
+
+.check-frgt-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.636);
+  margin-bottom: 30px;
+}
+
+.check-frgt-container a{
+  color: #1E29F0;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.check-frgt-container a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.checkbox input {
+  margin-left: 8px;
+}
+
+.forgot-pass{
+  text-align: right;
+  font-size: 0.9rem;
+}
+
+.link-btn:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.sign-up-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  width: 95%;
+  background: linear-gradient(90deg, #ff4e00 55%, #ec9f05 100%);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 15px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #009ffd 0%, #3e3ee9 100%);
+  transform: scale(1.1)
+}
+
+.login-link {
+  margin-top: 15px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.685);
+  text-align: center;
+}
+
+#login-link-btn {
+  color: #1E29F0;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+#login-link-btn:hover {
+  text-decoration: underline;
+  color: black;
+}

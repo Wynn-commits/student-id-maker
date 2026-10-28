@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+}
+nav{
+    background-color: rgb(30,30,30);
+    padding: 5px 10px;
+}
+img{
+    width:48px;
+    position: relative; 
+    top: 11px;
+}
+.brand-container{
+    display: inline-block;
+}
+.brand-title{
+    display: inline-block;
+    color: white;
+    font-family: Verdana;
+    position: relative;
+    left: 15px;
+}
+.link-container{
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    left: 290px;
+}
+.links{
+    color: white;
+    text-decoration: none;
+    font-family: Verdana;
+    margin: 25px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.links:hover{
+    color: blueviolet;
+}
+.login-btn-container{
+    float: right;
+}
+.login-btn{
+    background-color: blueviolet;
+    padding: 10px 15px;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    color: white;
+    font-family: Verdana;
+    text-decoration: none;
+    position: relative;
+    top: 27px;
+    right: 25px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.login-btn:hover{
+    color: black;
+    border-top-right-radius: 30px;
+}
+.login-btn:active{
+    background-color: gold;
+    color: white;
+}

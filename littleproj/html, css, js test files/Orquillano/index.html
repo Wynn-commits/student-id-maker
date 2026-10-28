@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="main-container">
+    <h1>Baligyaanan ni Erwin</h1>
+
+    <div class="wrapper">
+      <div class="grid">
+
+        <div class="card"
+             onclick="openModal('productModal1')"
+             onmouseover="hoverImage('unhoveredImage1','hoveredImage1')"
+             onmouseout="unhoverImage('unhoveredImage1','hoveredImage1')">
+
+          <div class="image-container">
+            <img id="unhoveredImage1" class="image" src="Product_Images/AIR_JORDAN_4_RM1.png" />
+            <img id="hoveredImage1" class="hidden-image" src="Product_Images/AIR_JORDAN_4_RM_TOPVIEW.png" />
+          </div>
+
+          <div class="shoe-name">Air Jordan 4 RM</div>
+          <div class="price">₱10,000</div>
+          <div class="real-price">₱15,000</div>
+          <div class="discount">30% off</div>
+        </div>
+
+        <div class="card"
+             onclick="openModal('productModal2')"
+             onmouseover="hoverImage('unhoveredImage2','hoveredImage2')"
+             onmouseout="unhoverImage('unhoveredImage2','hoveredImage2')">
+
+          <div class="image-container">
+            <img id="unhoveredImage2" class="image" src="Product_Images/Nike_Dunk_Low.png" />
+            <img id="hoveredImage2" class="hidden-image" src="Product_Images/NIKE_DUNK_LOW_TOPVIEW.png" />
+          </div>
+
+          <div class="shoe-name">Nike Dunk Low</div>
+          <div class="price">₱5,000</div>
+          <div class="real-price">₱15,000</div>
+          <div class="discount">90% limited off</div>
+        </div>
+
+        <div class="card"
+             onclick="openModal('productModal3')" 
+             onmouseover="hoverImage('unhoveredImage3','hoveredImage3')"
+             onmouseout="unhoverImage('unhoveredImage3','hoveredImage3')">
+
+          <div class="image-container">
+            <img id="unhoveredImage3" class="image" src="Product_Images/NIKE_VICTORI_ONE_SLIDE.png" />
+            <img id="hoveredImage3" class="hidden-image" src="Product_Images/NIKE_VICTORI_ONE_SLIDE_TOPVIEW.png" />
+          </div>
+
+          <div class="shoe-name">Nike Victori One Slide</div>
+          <div class="price">₱5,000</div>
+          <div class="real-price">₱15,000</div>
+          <div class="discount">90% limited off</div>
+        </div>
+
+        <div class="card"
+             onclick="openModal('productModal4')"
+             onmouseover="hoverImage('unhoveredImage4','hoveredImage4')"
+             onmouseout="unhoverImage('unhoveredImage4','hoveredImage4')">
+
+          <div class="image-container">
+            <img id="unhoveredImage4" class="image" src="Product_Images/NIKE_AIR_FORCE_1.png"/>
+            <img id="hoveredImage4" class="hidden-image" src="Product_Images/NIKE_AIR_FORCE_1_TOPVIEW.png" />
+          </div>
+
+          <div class="shoe-name">Nike Air Force 1</div>
+          <div class="price">₱6,500</div>
+          <div class="real-price">₱12,500</div>
+          <div class="discount">48% off</div>
+        </div>
+
+        <div class="card"
+             onclick="openModal('productModal5')"
+             onmouseover="hoverImage('unhoveredImage5','hoveredImage5')"
+             onmouseout="unhoverImage('unhoveredImage5','hoveredImage5')">
+
+          <div class="image-container">
+            <img id="unhoveredImage5" class="image" src="Product_Images/NIKE_YEEZY_350.png" />
+            <img id="hoveredImage5" class="hidden-image" src="Product_Images/NIKE_YEEZY_350_TOPVIEW.png" />
+          </div>
+
+          <div class="shoe-name">Adidas Yeezy 350</div>
+          <div class="price">₱8,000</div>
+          <div class="real-price">₱18,000</div>
+          <div class="discount">55% off</div>
+        </div>
+
+        <div class="card"
+             onclick="openModal('productModal6')"
+             onmouseover="hoverImage('unhoveredImage6','hoveredImage6')"
+             onmouseout="unhoverImage('unhoveredImage6','hoveredImage6')">
+
+          <div class="image-container">
+            <img id="unhoveredImage6" class="image" src="Product_Images/CONVERSE_CHUCK_TAYLOR.png" />
+            <img id="hoveredImage6" class="hidden-image" src="Product_Images/CONVERSE_CHUCK_TAYLOR_TOPVIEW.png" />
+          </div>
+
+          <div class="shoe-name">Converse Chuck Taylor</div>
+          <div class="price">₱3,000</div>
+          <div class="real-price">₱4,500</div>
+          <div class="discount">33% off</div>
+        </div>
+
+        <div class="card"
+             onclick="openModal('productModal7')"
+             onmouseover="hoverImage('unhoveredImage7','hoveredImage7')"
+             onmouseout="unhoverImage('unhoveredImage7','hoveredImage7')">
+
+          <div class="image-container">
+            <img id="unhoveredImage7" class="image" src="Product_Images/NEW_BALANCE_550.png" />
+            <img id="hoveredImage7" class="hidden-image" src="Product_Images/NEW_BALANCE_550_TOPVIEW.png" />
+          </div>
+
+          <div class="shoe-name">New Balance 550</div>
+          <div class="price">₱7,000</div>
+          <div class="real-price">₱10,000</div>
+          <div class="discount">30% off</div>
+        </div>
+
+        <div class="card"
+             onclick="openModal('productModal8')"
+             onmouseover="hoverImage('unhoveredImage8','hoveredImage8')"
+             onmouseout="unhoverImage('unhoveredImage8','hoveredImage8')">
+
+          <div class="image-container">
+            <img id="unhoveredImage8" class="image" src="Product_Images/Suede-Classic-Sneakers.png" />
+            <img id="hoveredImage8" class="hidden-image" src="Product_Images/Suede-Classic-Sneakers-TOPVIEW.png" />
+          </div>
+
+          <div class="shoe-name">Puma Suede Classic</div>
+          <div class="price">₱4,200</div>
+          <div class="real-price">₱6,000</div>
+          <div class="discount">30% off</div>
+        </div>
+
+        <div class="card"
+             onclick="openModal('productModal9')"
+             onmouseover="hoverImage('unhoveredImage9','hoveredImage9')"
+             onmouseout="unhoverImage('unhoveredImage9','hoveredImage9')">
+
+          <div class="image-container">
+            <img id="unhoveredImage9" class="image" src="Product_Images/Vans-Skate-Old-Skool.png" />
+            <img id="hoveredImage9" class="hidden-image" src="Product_Images/Vans-Skate-Old-Skool-TOPVIEW.png" />
+          </div>
+
+          <div class="shoe-name">Vans Old Skool</div>
+          <div class="price">₱3,200</div>
+          <div class="real-price">₱5,000</div>
+          <div class="discount">36% off</div>
+        </div>
+
+        <div class="card"
+             onclick="openModal('productModal10')"
+             onmouseover="hoverImage('unhoveredImage10','hoveredImage10')"
+             onmouseout="unhoverImage('unhoveredImage10','hoveredImage10')">
+
+          <div class="image-container">
+            <img id="unhoveredImage10" class="image" src="Product_Images/REEBOK_CLASSIC_LEATHER.png" />
+            <img id="hoveredImage10" class="hidden-image" src="Product_Images/REEBOK_CLASSIC_LEATHER_TOPVIEW.png" />
+          </div>
+
+          <div class="shoe-name">Reebok Classic Leather</div>
+          <div class="price">₱4,800</div>
+          <div class="real-price">₱7,500</div>
+          <div class="discount">36% off</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="overlay" id="overlay"></div>
+
+
+  <div class="modal" id="productModal1">
+    <div class="image-container-modal"
+         onmouseover="modalhoverImage('modal-unhoveredImage1','modal-hoveredImage1')"
+         onmouseout="modalunhoverImage('modal-unhoveredImage1','modal-hoveredImage1')">
+
+      <img id="modal-unhoveredImage1" class="image" src="Product_Images/AIR_JORDAN_4_RM1.png" />
+      <img id="modal-hoveredImage1" class="hidden-image" src="Product_Images/AIR_JORDAN_4_RM_TOPVIEW.png" />
+    </div>
+
+    <div class="modal-content">
+      <h2>Air Jordan 4 RM</h2>
+      <p>Kaning sapatosa kay mahal gamay.</p>
+      <button onclick="closeModal('productModal1')" class="close-btn">Close</button>
+    </div>
+  </div>
+
+  <div class="modal" id="productModal2">
+    <div class="image-container-modal"
+         onmouseover="modalhoverImage('modal-unhoveredImage2','modal-hoveredImage2')"
+         onmouseout="modalunhoverImage('modal-unhoveredImage2','modal-hoveredImage2')">
+
+      <img id="modal-unhoveredImage2" class="image" src="Product_Images/Nike_Dunk_Low.png" />
+      <img id="modal-hoveredImage2" class="hidden-image" src="Product_Images/NIKE_DUNK_LOW_TOPVIEW.png" />
+    </div>
+
+    <div class="modal-content">
+      <h2>Nike Dunk Low</h2>
+      <p>Kaning sapatosa wala kaayo mo palit maong ni barato.</p>
+      <button onclick="closeModal('productModal2')" class="close-btn">Close</button>
+    </div>
+  </div>
+
+  <div class="modal" id="productModal3">
+    <div class="image-container-modal" 
+        onmouseover="modalhoverImage('modal-unhoveredImage3','modal-hoveredImage3')"
+        onmouseout="modalunhoverImage('modal-unhoveredImage3','modal-hoveredImage3')">
+        
+      <img id="modal-unhoveredImage3" class="image" src="Product_Images/NIKE_VICTORI_ONE_SLIDE.png" />
+      <img id="modal-hoveredImage3" class="hidden-image" src="Product_Images/NIKE_VICTORI_ONE_SLIDE_TOPVIEW.png" />
+    </div>
+
+    <div class="modal-content">
+      <h2>Nike Victori One Slide</h2>
+      <p>Tsinelas ni siya na Nike.</p>
+      <button onclick="closeModal('productModal3')" class="close-btn">Close</button>
+    </div>
+  </div>
+
+  <div class="modal" id="productModal4">
+    <div class="image-container-modal"
+         onmouseover="modalhoverImage('modal-unhoveredImage4','modal-hoveredImage4')"
+         onmouseout="modalunhoverImage('modal-unhoveredImage4','modal-hoveredImage4')">
+      <img id="modal-unhoveredImage4" class="image" src="Product_Images/NIKE_AIR_FORCE_1.png" />
+      <img id="modal-hoveredImage4" class="hidden-image" src="Product_Images/NIKE_AIR_FORCE_1_TOPVIEW.png" />
+    </div>
+    <div class="modal-content">
+      <h2>Nike Air Force 1</h2>
+      <p>Classic kaayo ni nga sapatos, pang streetwear kaayo.</p>
+      <button onclick="closeModal('productModal4')" class="close-btn">Close</button>
+    </div>
+  </div>
+
+  <div class="modal" id="productModal5">
+    <div class="image-container-modal"
+         onmouseover="modalhoverImage('modal-unhoveredImage5','modal-hoveredImage5')"
+         onmouseout="modalunhoverImage('modal-unhoveredImage5','modal-hoveredImage5')">
+      <img id="modal-unhoveredImage5" class="image" src="Product_Images/NIKE_YEEZY_350.png" />
+      <img id="modal-hoveredImage5" class="hidden-image" src="Product_Images/NIKE_YEEZY_350_TOPVIEW.png" />
+    </div>
+    <div class="modal-content">
+      <h2>Adidas Yeezy 350</h2>
+      <p>Nindot ni pang comfortable ug pang lakaw2x.</p>
+      <button onclick="closeModal('productModal5')" class="close-btn">Close</button>
+    </div>
+  </div>
+
+  <div class="modal" id="productModal6">
+    <div class="image-container-modal"
+         onmouseover="modalhoverImage('modal-unhoveredImage6','modal-hoveredImage6')"
+         onmouseout="modalunhoverImage('modal-unhoveredImage6','modal-hoveredImage6')">
+      <img id="modal-unhoveredImage6" class="image" src="Product_Images/CONVERSE_CHUCK_TAYLOR.png" />
+      <img id="modal-hoveredImage6" class="hidden-image" src="Product_Images/CONVERSE_CHUCK_TAYLOR_TOPVIEW.png" />
+    </div>
+    <div class="modal-content">
+      <h2>Converse Chuck Taylor</h2>
+      <p>Pang classic ug OG look.</p>
+      <button onclick="closeModal('productModal6')" class="close-btn">Close</button>
+    </div>
+  </div>
+
+  <div class="modal" id="productModal7">
+    <div class="image-container-modal"
+         onmouseover="modalhoverImage('modal-unhoveredImage7','modal-hoveredImage7')"
+         onmouseout="modalunhoverImage('modal-unhoveredImage7','modal-hoveredImage7')">
+      <img id="modal-unhoveredImage7" class="image" src="Product_Images/NEW_BALANCE_550.png" />
+      <img id="modal-hoveredImage7" class="hidden-image" src="Product_Images/NEW_BALANCE_550_TOPVIEW.png" />
+    </div>
+    <div class="modal-content">
+      <h2>New Balance 550</h2>
+      <p>Trending kaayo sa mga sneakerheads.</p>
+      <button onclick="closeModal('productModal7')" class="close-btn">Close</button>
+    </div>
+  </div>
+
+  <div class="modal" id="productModal8">
+    <div class="image-container-modal"
+         onmouseover="modalhoverImage('modal-unhoveredImage8','modal-hoveredImage8')"
+         onmouseout="modalunhoverImage('modal-unhoveredImage8','modal-hoveredImage8')">
+      <img id="modal-unhoveredImage8" class="image" src="Product_Images/Suede-Classic-Sneakers.png" />
+      <img id="modal-hoveredImage8" class="hidden-image" src="Product_Images/Suede-Classic-Sneakers-TOPVIEW.png" />
+    </div>
+    <div class="modal-content">
+      <h2>Puma Suede Classic</h2>
+      <p>Simple pero limpyo tan-awon.</p>
+      <button onclick="closeModal('productModal8')" class="close-btn">Close</button>
+    </div>
+  </div>
+
+  <div class="modal" id="productModal9">
+    <div class="image-container-modal"
+         onmouseover="modalhoverImage('modal-unhoveredImage9','modal-hoveredImage9')"
+         onmouseout="modalunhoverImage('modal-unhoveredImage9','modal-hoveredImage9')">
+      <img id="modal-unhoveredImage9" class="image" src="Product_Images/Vans-Skate-Old-Skool.png" />
+      <img id="modal-hoveredImage9" class="hidden-image" src="Product_Images/Vans-Skate-Old-Skool-TOPVIEW.png" />
+    </div>
+    <div class="modal-content">
+      <h2>Vans Old Skool</h2>
+      <p>Pang skate or pang everyday fit.</p>
+      <button onclick="closeModal('productModal9')" class="close-btn">Close</button>
+    </div>
+  </div>
+
+  <div class="modal" id="productModal10">
+    <div class="image-container-modal"
+         onmouseover="modalhoverImage('modal-unhoveredImage10','modal-hoveredImage10')"
+         onmouseout="modalunhoverImage('modal-unhoveredImage10','modal-hoveredImage10')">
+      <img id="modal-unhoveredImage10" class="image" src="Product_Images/REEBOK_CLASSIC_LEATHER.png" />
+      <img id="modal-hoveredImage10" class="hidden-image" src="Product_Images/REEBOK_CLASSIC_LEATHER_TOPVIEW.png" />
+    </div>
+    <div class="modal-content">
+      <h2>Reebok Classic Leather</h2>
+      <p>Clean and timeless design.</p>
+      <button onclick="closeModal('productModal10')" class="close-btn">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <!--By: Erwin Gail O. Orquillano-->
+</body>
+</html>

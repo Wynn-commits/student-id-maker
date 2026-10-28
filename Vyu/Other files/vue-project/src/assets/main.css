@@ -1,0 +1,6 @@
+@import './base.css';
+
+/* App shell */
+#app {
+  font-weight: normal;
+}

@@ -1,0 +1,22 @@
+LOGIN CREDENTIALS
+
+Admin
+Email: admin@elpueblo.com
+Password: admin123
+
+Test User
+Email: rolando.agra@email.com, erwin.orq@email.com
+Password: password123
+
+Sample User Accounts (All passwords: admin123)
+juan.delacruz@student.edu
+maria.santos@student.edu
+pedro.reyes@student.edu
+ana.garcia@student.edu
+carlos.mendoza@student.edu (and 15 more)
+
+
+Members:
+Orquillano, Erwin Gail O.
+Palao, Kennedy Gomez
+Agraviador, Rolando Jr.

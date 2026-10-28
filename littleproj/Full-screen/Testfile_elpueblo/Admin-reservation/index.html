@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservation Management</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="overlay" id="overlay"></div>
+    <div class="modal" id="modal">
+      <img
+        class="shut-down"
+        src="/Images/shutdown-red-96.png"
+        alt="shut-down"
+      />
+      <div class="logout-container">
+        <h2>Remove Guest</h2>
+        <p>Are you sure you want to remove guest</p>
+        <div class="logout-btn-container">
+          <button class="cancel-btn" onclick="closeRemove('modal')">
+            Cancel
+          </button>
+          <button class="logout-btn" onclick="closeRemove('modal')">
+            <a href="#">Remove Guest</a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <header id="site-header">
+      <nav>
+        <div class="brand-container">
+          <div class="black-container">
+            <img src="/Images/elpueblo-removebg-preview1.png" alt="logo" />
+          </div>
+        </div>
+        <h1>Reservation Management</h1>
+        <div class="empty-container"></div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <aside class="sidebar">
+        <ul>
+          <li>
+            <a href="/Admin-dashboard/index.html"
+              ><img src="/Images/orange-foursquares-icon50.png" alt="icon" />
+              Dashboard</a
+            >
+          </li>
+          <li class="active">
+            <img src="/Images/black-reserve-icon50.png" alt="icon" />
+            Reservation
+          </li>
+          <li>
+            <a href="/Admin-rooms/index.html"
+              ><img src="/Images/orange-home-icon50.png" alt="icon" /> Rooms</a
+            >
+          </li>
+          <li>
+            <a href="/Admin-messages/index.html"
+              ><img src="/Images/orange-typing-icon50.png" alt="icon" />
+              Messages</a
+            >
+          </li>
+        </ul>
+      </aside>
+
+      <div class="main-content">
+        <div class="controls">
+          <button class="add-btn">
+            <a href="/Add-reservation/index.html"
+              ><span class="plus">+</span> Add Reservation</a
+            >
+          </button>
+        </div>
+
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Reservation ID</th>
+                <th>Guest Name</th>
+                <th>Room</th>
+                <th>Check-in</th>
+                <th>Check-out</th>
+                <th>Amount</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>R-1024</strong></td>
+                <td>Rolando Agra</td>
+                <td>204</td>
+                <td>Apr 25, 2024</td>
+                <td>Apr 30, 2024</td>
+                <td class="amount">₱850</td>
+                <td><span class="status confirmed">Confirmed</span></td>
+                <td class="actions">
+                  <button class="btn edit">
+                    <a href="/Edit-reservation/index.html">✏️ Edit</a>
+                  </button>
+                  <button class="btn cancel" onclick="openRemove('modal')">
+                    🗑 Cancel
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>R-1023</strong></td>
+                <td>Erwin Orq</td>
+                <td>305</td>
+                <td>Apr 25, 2024</td>
+                <td>Apr 30, 2024</td>
+                <td class="amount">₱850</td>
+                <td><span class="status pending">Pending</span></td>
+                <td class="actions">
+                  <button class="btn edit">
+                    <a href="/Edit-reservation/index.html">✏️ Edit</a>
+                  </button>
+                  <button class="btn cancel" onclick="openRemove('modal')">
+                    🗑 Cancel
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>R-1022</strong></td>
+                <td>Kennedy Orig</td>
+                <td>112</td>
+                <td>Apr 25, 2024</td>
+                <td>Apr 30, 2024</td>
+                <td class="amount">₱850</td>
+                <td><span class="status confirmed">Confirmed</span></td>
+                <td class="actions">
+                  <button class="btn edit">
+                    <a href="/Edit-reservation/index.html">✏️ Edit</a>
+                  </button>
+                  <button class="btn cancel" onclick="openRemove('modal')">
+                    🗑 Cancel
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>R-1021</strong></td>
+                <td>Tita Minamahal</td>
+                <td>216</td>
+                ..
+                <td>Apr 25, 2024</td>
+                <td>Apr 30, 2024</td>
+                <td class="amount">₱850</td>
+                <td><span class="status pending">Pending</span></td>
+                <td class="actions">
+                  <button class="btn edit">
+                    <a href="/Edit-reservation/index.html">✏️ Edit</a>
+                  </button>
+                  <button class="btn cancel" onclick="openRemove('modal')">
+                    🗑 Cancel
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>R-1027</strong></td>
+                <td>Tatay Billiards</td>
+                <td>227</td>
+                <td>Apr 25, 2024</td>
+                <td>Apr 30, 2024</td>
+                <td class="amount">₱850</td>
+                <td><span class="status confirmed">Confirmed</span></td>
+                <td class="actions">
+                  <button class="btn edit">
+                    <a href="/Edit-reservation/index.html">✏️ Edit</a>
+                  </button>
+                  <button class="btn cancel" onclick="openRemove('modal')">
+                    🗑 Cancel
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>R-1025</strong></td>
+                <td>Mae Pasinabo</td>
+                <td>192</td>
+                <td>Apr 25, 2024</td>
+                <td>Apr 30, 2024</td>
+                <td class="amount">₱850</td>
+                <td><span class="status confirmed">Confirmed</span></td>
+                <td class="actions">
+                  <button class="btn edit">
+                    <a href="/Edit-reservation/index.html">✏️ Edit</a>
+                  </button>
+                  <button class="btn cancel" onclick="openRemove('modal')">
+                    🗑 Cancel
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>R-1026</strong></td>
+                <td>Jennifer Blas</td>
+                <td>307</td>
+                <td>Apr 25, 2024</td>
+                <td>Apr 30, 2024</td>
+                <td class="amount">₱850</td>
+                <td><span class="status canceled">Canceled</span></td>
+                <td class="actions">
+                  <button class="btn edit">
+                    <a href="/Edit-reservation/index.html">✏️ Edit</a>
+                  </button>
+                  <button class="btn cancel" onclick="openRemove('modal')">
+                    🗑 Cancel
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>R-1028</strong></td>
+                <td>John Doe</td>
+                <td>339</td>
+                <td>Apr 25, 2024</td>
+                <td>Apr 30, 2024</td>
+                <td class="amount">₱850</td>
+                <td><span class="status pending">Pending</span></td>
+                <td class="actions">
+                  <button class="btn edit">
+                    <a href="/Edit-reservation/index.html">✏️ Edit</a>
+                  </button>
+                  <button class="btn cancel" onclick="openRemove('modal')">
+                    🗑 Cancel
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>R-1029</strong></td>
+                <td>Clint Clarido</td>
+                <td>129</td>
+                <td>Apr 25, 2024</td>
+                <td>Apr 30, 2024</td>
+                <td class="amount">₱850</td>
+                <td><span class="status confirmed">Confirmed</span></td>
+                <td class="actions">
+                  <button class="btn edit">
+                    <a href="/Edit-reservation/index.html">✏️ Edit</a>
+                  </button>
+                  <button class="btn cancel" onclick="openRemove('modal')">
+                    🗑 Cancel
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>R-1030</strong></td>
+                <td>Sir Cañeso</td>
+                <td>187</td>
+                <td>Apr 25, 2024</td>
+                <td>Apr 30, 2024</td>
+                <td class="amount">₱850</td>
+                <td><span class="status canceled">Canceled</span></td>
+                <td class="actions">
+                  <button class="btn edit">
+                    <a href="/Edit-reservation/index.html">✏️ Edit</a>
+                  </button>
+                  <button class="btn cancel" onclick="openRemove('modal')">
+                    🗑 Cancel
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="divider"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    font-family: 'Segoe UI';
+    background-color: rgb(30, 30, 30);
+    overflow: hidden;
+    height: 100vh;
+}
+
+nav{
+    padding: 10px 15px;
+    position: sticky;
+}
+
+img{
+    position: relative;
+    left: 13px;
+    width: 120px;
+}
+
+.brand-container{
+    display: inline-block;
+}
+
+.link-container{
+    float: right;
+    position: relative;
+    top: 20px;
+    right: -5px;
+}
+
+.links{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    padding: 5px 17px;
+    font-weight: lighter;
+    font-size: larger;
+    transition: 0.3s ease;
+}
+
+.links:hover{
+    color: rgb(162, 162, 162);
+}
+
+.here{
+    color: rgb(162, 162, 162);;
+    text-decoration: none;
+    margin: 10px;
+    padding: 5px 17px;
+    font-weight: lighter;
+    font-size: larger;
+}
+
+.main-body{
+    padding: 20px;
+    margin: 3%;
+    color: white;
+    max-width: 650px;
+}
+
+.main-body p{
+    margin-top: -10px;
+    font-weight: 300;
+    font-size: 22px;
+    word-spacing: 1px;
+}
+
+.main-body h2{
+    font-weight: 600;
+    font-size: 27px;
+    position: absolute;
+    top: 90px;
+    left: 300px;
+}
+
+.main-body .quote{
+    font-weight: 400;
+}
+
+.main-body .reasons{
+    margin-top: -20px;
+}

@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background-color: black;
+    min-height: 100vh;
+}
+
+nav{
+    z-index: 2000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 clamp(12px, 4vw, 20px);
+}
+
+.brand-container{
+    display: flex;
+    align-items: center;
+}
+
+.brand-container img{
+    width: clamp(56px, 18vw, 100px);
+    height: auto;
+    opacity: 0;
+    transition: width 0.3s ease, opacity 0.3s ease;
+    animation: brand-slide 1s ease forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes brand-slide {
+    from{
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: clamp(16px, 4vw, 24px);
+    min-height: 100vh;
+    padding: clamp(16px, 4vw, 32px);
+}
+
+.form-container{
+    background-color: white;
+    padding: clamp(20px, 4vw, 30px);
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    animation: textfade-slide 1.2s ease forwards;
+}
+
+@keyframes textfade-slide {
+    from{
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form-container h2{
+    margin: 0;
+    margin-bottom: 15px;
+    font-weight: lighter;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.naming-container{
+    display: flex;
+    gap: clamp(8px, 2vw, 10px);
+    flex-wrap: wrap;
+}
+
+.naming-container label{
+    flex: 1;
+}
+
+.naming-container input{
+    flex: 1;
+    min-width: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.naming-container span{
+    font-size: 14px;
+    position: relative;
+    top: 7px;
+}
+
+.input-container{
+    width: 100%;
+}
+
+.input-container input{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input{
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+input:focus{
+    border-color: black;
+    transform: translateY(-1px);
+}
+
+label span{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.636);
+    position: relative;
+    top: 7px;
+}
+
+#password-hint{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.450);
+    margin-bottom: 10px;
+    margin-top: 2px;
+}
+
+.checkbox {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    line-height: 1.4;
+}
+
+
+.checkbox input{
+    margin-right: 8px;
+}
+
+.checkbox span{
+    color: rgba(0, 0, 0, 0.650);
+    position: relative;
+    top: 0;
+}
+
+.checkbox a{
+    color: black;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.link-btn:hover{
+    color: rgb(0, 110, 255);
+    text-decoration: underline;
+}
+
+.sign-up-container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    background-color: #ccc;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    background-color: black;
+    color: #dddddd;
+    transform: scale(1.1);
+}
+
+.login-link{
+    margin-top: 12px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.685);
+}
+
+#login-link-btn{
+    color: black;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+#login-link-btn:hover{
+    text-decoration: underline;
+    color:rgb(0, 110, 255);
+}
+
+/* labad ulo ko sine sarap sapakin */
+
+.back {
+    text-align: center;
+}
+
+.back-to-homepage {
+    color: white;
+    text-decoration: none;
+    font-size: clamp(0.85rem, 2.5vw, 0.95rem);
+    transition: color 0.3s ease;
+}
+
+.back-to-homepage:hover {
+    color: rgb(155, 155, 155);
+}

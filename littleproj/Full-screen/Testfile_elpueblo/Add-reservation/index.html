@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Reservation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="brand-container">
+          <div class="black-container">
+            <img src="/Images/elpueblo-removebg-preview.png" alt="logo" />
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <aside class="sidebar">
+        <ul>
+          <li>
+            <a href="/Admin-dashboard/index.html"
+              ><img
+                src="/Images/orange-foursquares-icon50.png"
+                alt="icon"
+              />
+              Dashboard</a
+            >
+          </li>
+          <li class="active">
+            <img
+              src="/Images/black-reserve-icon50.png"
+              alt="icon"
+            />
+            Reservation
+          </li>
+          <li>
+            <a
+              href="/Admin-rooms/index.html"
+              ><img
+                src="/Images/orange-home-icon50.png"
+                alt="icon"
+              />
+              Rooms</a
+            >
+          </li>
+          <li>
+            <a href="/Admin-messages/index.html"
+              ><img
+                src="/Images/orange-typing-icon50.png"
+                alt="icon"
+              />
+              Messages</a
+            >
+          </li>
+        </ul>
+      </aside>
+
+      <main>
+        <section class="form-container">
+          <h2>Add Reservation</h2>
+
+          <form>
+            <div class="naming-container">
+              <label>
+                <span>First name</span>
+                <input type="text" required />
+              </label>
+
+              <label>
+                <span>Last name</span>
+                <input type="text" required />
+              </label>
+            </div>
+
+            <label>
+              <span>Email address</span>
+              <input type="email" required />
+            </label>
+
+            <label>
+              <span>Phone number</span>
+              <input type="tel" required />
+            </label>
+
+            <label>
+              <span>Password</span>
+              <input type="password" required />
+            </label>
+
+            <label>
+              <span>Payment Amount</span>
+              <input type="number" required />
+            </label>
+
+            <button type="submit">Add Reservation</button>
+          </form>
+        </section>
+      </main>
+
+    </div>
+  </body>
+</html>

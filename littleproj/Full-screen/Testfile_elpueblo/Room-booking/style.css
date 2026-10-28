@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-image: url("../Images/backgrounddorm1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 2000;
+  width: 100%;
+}
+.brand-container {
+  flex-shrink: 0;
+}
+.black-container img {
+  background-color: black;
+  display: block;
+  width: 120px;
+  height: auto;
+  border-radius: 20px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  font-size: 1rem;
+  min-height: 70px;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 150px;
+  list-style: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+nav li a {
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0 8px;
+  transition: all 0.4s ease-out;
+  cursor: pointer;
+}
+
+nav li a:hover {
+  color: #ec9f05;
+}
+.auth-buttons {
+  display: flex;
+  gap: 15px;
+  flex-shrink: 0;
+}
+.back-btn {
+  background: linear-gradient(90deg, #ff4e00 55%, #ec9f05 100%);
+  color: white;
+  font-size: 1rem;
+  font-weight: lighter;
+  padding: 8px 25px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+.back-btn img{
+    width: 20px;
+    height: 25px;
+    object-fit: cover;
+    object-position: center;
+}
+.back-btn:hover {
+  background: white;
+  color: #ec9f05;
+  border: 1px #ec9f05 solid;
+}
+
+main{
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateY(-40px);
+    animation: box-slide 0.75s ease forwards;
+}
+
+@keyframes box-slide {
+  from{
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section{
+    width: 90%;
+    margin-bottom: 2%;
+    padding: 10px 20px;
+}
+section h2{
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.container{
+    width: 100%;
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+.card{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.image-container img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.text-container{
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.text-container span{
+  opacity: 0.7;
+}
+.card a{
+  text-decoration: none;
+  color: white;
+}
+.card button{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  background-color: #ff4e00;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card button:hover{
+  background-color: #0353d6;
+  transform: translateY(4px);
+}
+
+#womens-room{
+  margin-bottom: 0;
+}
+
+.profile-container{
+    margin-top: 1%;
+    padding: 2% 15px;
+    background-color: white;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    gap: 10px;
+}
+
+.profile-container h2{
+    text-align: center;
+    margin: 15px 0 10px;
+}
+
+.profile-container img{
+    width: 130px;
+    height: 130px;
+    border-radius: 80px;
+}
+
+.info-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+table{
+    width: 100%;
+    justify-content: space-between;
+}
+
+table tr{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+table th{
+    font-weight: lighter;
+}
+
+table td{
+    font-weight: bold;
+}
+
+.profile-container button{
+  background: linear-gradient(90deg, #009ffd 0%, #3e3ee9 100%);
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: lighter;
+  padding: 10px 50px;
+  width: 40%;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+}
+.profile-container button:hover {
+  transform: translateY(10px);
+  background: linear-gradient(90deg, #ff4e00 55%, #ec9f05 100%);
+}

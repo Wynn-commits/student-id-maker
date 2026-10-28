@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="site-header">
+      <nav>
+        <div class="brand-container">
+          <div class="black-container">
+            <img src="/Images/elpueblo-removebg-preview1.png" alt="logo"/>
+          </div>
+        </div>
+        <div class="auth-buttons">
+          <a href="/Sign-in-as/index.html" class="back-btn"><img src="/Images/left-arrow-1.png" alt="left-arrow"> Go back</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="form-container">
+        <h2>Join our <span class="orange-col">Dormitory!</span></h2>
+        <form>
+          <div class="naming-container">
+            <label class="text" for="firstname">
+              <span>First name</span><br />
+              <input type="text" id="firstname" required />
+            </label>
+
+            <label class="text" for="lastname">
+              <span>Last name</span><br />
+              <input type="text" id="lastname" required />
+            </label>
+          </div>
+
+          <div class="input-container">
+            <label for="email">
+              <span>Email address</span><br />
+              <input type="email" id="email" required />
+            </label>
+          </div>
+
+          <div class="input-container">
+            <label for="phone">
+              <span>Phone number</span><br />
+              <input type="tel" id="phone" required />
+            </label>
+          </div>
+
+          <div class="input-container">
+            <label for="password">
+              <span>Password</span><br />
+              <input type="password" id="password" required />
+            </label>
+          </div>
+
+          <label class="checkbox">
+            <input type="checkbox" required />
+            <span>
+              By creating an account, I agree to our
+              <a href="/Dormitory-rules/index.html?from=signup-page" class="link-btn">Dormitory rules and Regulations</a>
+            </span>
+          </label>
+
+          <label class="checkbox">
+            <input type="checkbox" required />
+            <span>
+              By creating an account, I am also consenting to receive SMS
+              messages and emails, including product updates, events, and
+              marketing promotions.
+            </span>
+          </label>
+
+          <div class="sign-up-container">
+            <button type="submit"><a href="/Room-booking/index.html">Sign up</a></button>
+            <p class="login-link">
+              Already have an account?
+              <a
+                href="/Sign-in/index.html"
+                id="login-link-btn"
+                >Sign in</a
+              >
+            </p>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

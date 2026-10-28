@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-image: url("/littleproj/html, css, js test files/test files/Testfile_elpueblo/Images/backgrounddorm1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 2000;
+  width: 100%;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  font-size: 1rem;
+  min-height: 70px;
+}
+.auth-buttons {
+  display: flex;
+  gap: 15px;
+  flex-shrink: 0;
+}
+.back-btn {
+  background: linear-gradient(90deg, #ff4e00 55%, #ec9f05 100%);
+  color: white;
+  font-size: 1rem;
+  font-weight: lighter;
+  padding: 8px 25px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+.back-btn img{
+    width: 20px;
+    height: 25px;
+    object-fit: cover;
+    object-position: center;
+}
+.back-btn:hover {
+  background: white;
+  color: #ec9f05;
+  border: 1px #ec9f05 solid;
+}
+
+main {
+  padding: 5% 0;
+  margin: 0 0 5%;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.main-body{
+  padding: 30px 15px;
+  background-color: white;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+.heading-container{
+  text-align: center;
+}
+
+.heading-container h1{
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.heading-container h2{
+  margin-bottom: 15px;
+}
+
+.text-container{
+  padding: 0 20px;
+}
+
+.text-container ol{
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.text-container li{
+  line-height: 1.5;
+}

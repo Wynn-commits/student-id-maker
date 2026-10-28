@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <nav>
+        <div class="brand-container">
+            <img class="brand-logo" src="/littleproj/Full-screen/Amashle/Images/Amashle-white-logo.png" alt="Nike_logo"/>
+        </div>
+    </nav>
+
+    <main>
+        <section class="form-container">
+            <h2>Sign up now</h2>
+            <form>
+                <div class="naming-container">
+                    <label class="text" for="firstname">
+                        <span>First name</span><br/>
+                        <input type="text" id="firstname" required/>
+                    </label>
+
+                    <label class="text" for="lastname">
+                        <span>Last name</span><br/>
+                        <input type="text" id="lastname" required/>
+                    </label>
+                </div>
+
+                <div class="input-container">
+                    <label for="email">
+                        <span>Email address</span><br/>
+                        <input type="email" id="email" required/>
+                    </label>
+                </div>
+
+                <div class="input-container">
+                    <label for="phone">
+                        <span>Phone number</span><br/>
+                        <input type="tel" id="phone" required/>
+                    </label>
+                </div>
+
+                <div class="input-container">
+                    <label for="password">
+                        <span>Password</span><br/>
+                        <input type="password" id="password" required/>
+                    </label>
+                </div>
+                <p id="password-hint">
+                    Use 8 or more characters with a mix of letters, numbers & symbols
+                </p>
+
+                <label class="checkbox">
+                    <input type="checkbox" required/>
+                    <span>
+                        By creating an account, I agree to our
+                        <a href="#" class="link-btn">Terms of use</a> and <a href="#" class="link-btn">Privacy Policy</a>
+                    </span>
+                </label>
+
+                <label class="checkbox">
+                    <input type="checkbox" required />
+                    <span>
+                        By creating an account, I am also consenting to receive SMS messages and emails, including product updates, events, and marketing promotions.
+                    </span>
+                </label>
+
+                <div class="sign-up-container">
+                    <button type="submit">Sign up</button>
+                    <p class="login-link">
+                        Already have an account?
+                        <a href="/littleproj/Full-screen/Amashle/Login/index.html" id="login-link-btn">Log in</a>
+                    </p>
+                </div>
+            </form>
+        </section>
+        <div class="back">
+            <a href="/littleproj/Full-screen/Amashle/Main-interface/index.html" class="back-to-homepage">Go back to home page</a>
+        </div>
+    </main>
+</body>
+</html>

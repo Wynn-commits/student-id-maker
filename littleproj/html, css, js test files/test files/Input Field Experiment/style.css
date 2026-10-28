@@ -1,0 +1,9 @@
+.box{
+    transition: all 0.1s linear;
+    display: inline-block;
+}
+
+.box img{
+    height: 200px;
+    width: 150px;
+}

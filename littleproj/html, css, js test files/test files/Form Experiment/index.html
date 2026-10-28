@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <label for="firstname">First name: </label>
+    <input id="firstname" type="text" name="firstname">
+
+    <label for="lastname">Female: </label>
+    <input id="lastname" type="text" name="lastname">
+
+    <label for="country">Place: </label>
+    <select name="country" id="country">
+        <option value="PH">Philippines</option>
+        <option value="US">United States</option>
+        <option value="ID">Indonesia</option>
+    </select>
+
+    <label for="birthdate">Birth Date: </label>
+    <input id="birthdate" type="date" name="birthdate">
+
+    <label for="sex">Sex: </label>
+    <div class="box">
+        <label for="male">Male</label>
+        <input id="male" type="radio" name="sex" value="Male">
+        <label for="female">Female</label>
+        <input id="female" type="radio" name="sex" value="Female">
+    </div>
+
+    <div class="box">
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox">I agree for Terms and Conditions</label>
+    </div>
+
+
+    <button onclick="Submit()">Submit</button>
+    <p></p>
+    <script src="script.js"></script>
+</body>
+</html>

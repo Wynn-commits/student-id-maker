@@ -1,0 +1,111 @@
+body{
+    margin: 0;
+    background-image: url('Black\ Abstract\ Background\ Free\ Vector\ Art-01.jpg');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    font-family: 'Segoe UI', sans-serif;
+}
+nav{
+    padding: 10px 15px;
+}
+.brand-container{
+    display: inline-block;
+}
+.title{
+    color: white;
+    position: relative;
+    left: 30px;
+    font-weight: 500;
+}
+.link-container{
+    float: right;
+    position: relative;
+    top: 25px;
+    right: 15px;
+}
+.links{
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    margin: 10px;
+    border: 2px solid red;
+    padding: 5px 17px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    transition: 0.3s ease;
+}
+.links:hover{
+    border: 2px solid gray;
+    color: gray;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.links:active{
+    color: red;
+    border-color: red;
+}
+.content{
+    padding: 10px 15%;
+    color: white;
+    margin-top: 10%;
+    max-width: 600px;
+}
+p{
+    font-family: sans-serif;
+    color: rgb(148, 143, 143);
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+h1{
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: -5px;
+}
+.btn-container{
+    border: 2px solid red;
+    display: inline-block;
+    padding: 7px 30px;
+    margin-right: 13px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    position: relative;
+    top: 120px;
+    transition: 0.3s ease;
+}
+.btn-link{
+    color: white;
+    text-decoration: none;
+}
+.btn-container:hover{
+    border: 2px solid gray;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.btn-container:active{
+    background-color: red;
+    border-color: red;
+}
+
+.icon-container{
+    float: right;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    bottom: 140px;
+}
+.icons{
+    width: 25px;
+    margin-right: 7px;
+    padding: 1px;
+    border: 1px solid red;
+    border-radius: 30px;
+    margin-top: 5px;
+    transition: 0.3s ease;
+}
+.icons:hover{
+    border: 1px solid gray;
+}

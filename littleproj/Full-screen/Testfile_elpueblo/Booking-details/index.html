@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Room Details</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header id="site-header">
+      <nav>
+        <div class="auth-buttons">
+          <a
+            href="/Room-booking/index.html"
+            class="back-btn"
+          >
+            <img
+              src="/Images/left-arrow-1.png"
+              alt="left-arrow"
+            />
+            Go back
+          </a>
+        </div>
+
+        <div class="brand-container">
+          <div class="black-container">
+            <img
+              src="/Images/elpueblo-removebg-preview1.png"
+              alt="logo"
+            />
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Booking Details</h1>
+
+      <div class="booking-container">
+        <div class="room-details">
+          <div class="image-gallery">
+            <div class="main-image">
+              <img
+                id="mainImage"
+                src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Room"
+              />
+            </div>
+
+            <div class="thumbnail-container">
+              <img
+                src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                onclick="changeImage(this)"
+              />
+              <img
+                src="/Images/backgrounddorm1.jpg"
+                onclick="changeImage(this)"
+              />
+              <img
+                src="/Images/Coffee-High-Definition-Desktop-Wallpaper.jpg"
+                onclick="changeImage(this)"
+              />
+            </div>
+          </div>
+
+          <div class="room-info">
+            <h2>Room 001</h2>
+            <p class="room-type">Double decked room</p>
+
+            <p class="description">
+              Spacious double decked room perfect for groups or roommates,
+              offering a comfortable living and study space.
+            </p>
+
+            <div class="room-status">
+              <div class="left-status-container">
+                <div class="alignment">
+                  <img
+                    src="/Images/chekcmark-icon30.png"
+                  />
+                  <p>Availability: <strong>2 slots left</strong></p>
+                </div>
+
+                <div class="alignment">
+                  <img
+                    src="/Images/average-price0-icon30.png"
+                  />
+                  <p>Price: <strong>₱850 per month</strong></p>
+                </div>
+              </div>
+
+              <img
+                id="vertical-line"
+                src="/Images/vertical-line100.png"
+              />
+
+              <div class="right-status-container">
+                <div class="alignment">
+                  <img
+                    src="/Images/bunk-bed-icon30.png"
+                  />
+                  <p>Beds: <strong>4 bunk beds</strong></p>
+                </div>
+
+                <div class="alignment">
+                  <img
+                    src="/Images/smart-shelf30.png"
+                  />
+                  <p>Facilities:</p>
+
+                  <div class="icons-container">
+                    <img
+                      src="/Images/Wi-Fi-icon30.png"
+                    />
+                    <img
+                      src="/Images/vacuum-cleaner-icon30.png"
+                    />
+                    <img
+                      src="/Images/bureau-icon-30.png"
+                    />
+                    <img
+                      src="/Images/dishwasher-icon30.png"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="booking-summary" id="bookingPanel">
+          <div id="step1" class="step active">
+            <h3>Room Booking Summary</h3>
+            <p>Review your booking before proceeding</p>
+
+            <div class="divider"></div>
+
+            <div class="summary-box">
+              <h3>Selected room</h3>
+
+              <p>Room: <strong>Room 001</strong></p>
+              <p>Room type: <strong>Double Decked</strong></p>
+              <p>Beds: <strong>4 bunk beds</strong></p>
+              <p>Available slots: <strong>2</strong></p>
+              <p>Monthly fee: <strong>₱850</strong></p>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="cost-preview">
+              <h4>Cost Review</h4>
+
+              <div class="info-container">
+                <table>
+                  <tr>
+                    <td>Rate:</td>
+                    <td>₱850/month</td>
+                  </tr>
+                </table>
+
+                <div class="cost-line"></div>
+
+                <table>
+                  <tr>
+                    <td>Slots Reserved:</td>
+                    <td>1</td>
+                  </tr>
+                </table>
+
+                <div class="cost-line"></div>
+
+                <table>
+                  <tr class="last-tr">
+                    <td>Duration:</td>
+                    <td>Until I change</td>
+                  </tr>
+                </table>
+              </div>
+
+              <div class="button-container">
+                <button onclick="showConfirmation()" class="book-btn">
+                  Proceed to confirmation
+                </button>
+              </div>
+            </div>
+          </div>
+
+
+          <div id="step2" class="booking-confirmation step">
+            <h4 class="panel-title">Booking Confirmation</h4>
+
+            <div class="inner-box">
+              <p><strong>Room 001 - Double Decked Room</strong></p>
+
+              <div class="inner-context">
+                <table>
+                  <tr>
+                    <td>1 Bed Reserved</td>
+                    <td>Monthly Fee: <strong>₱850</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Available Slots</td>
+                    <td><strong>2 Slots Remaining</strong></td>
+                  </tr>
+                </table>  
+                <div class="date-box">
+              <label>Start Date</label>
+              <input type="date" value="2021-06-24" />
+            </div>
+          
+            <p class="Agree">Agree to the</p>
+            <label class="agreement-box">
+              <input type="checkbox" required />
+              <a href="/littleproj/html, css, js test files/test files/Testfile_elpueblo/Dormitory-rules/index.html?from=booking-page" class="link-btn">Dormitory rules and Regulations</a>
+            </label>
+
+            <div class="buttons-container">
+              <button onclick="showSuccess()" class="confirm-btn">
+                Confirm Booking
+              </button>
+              <button onclick="showStep(1)" class="btn-gray">
+                Back to Room Details
+              </button>
+            </div>
+              </div>
+            </div>
+
+            
+          </div>
+
+          
+          <div id="step3" class="successful-container step">
+            <div class="success-icon">
+              <img src="/Images/check-mark100.png" alt="Check-mark">
+            </div>
+
+            <h2 class="success-title">Booking Successful!</h2>
+
+            <div class="refrerence-box">
+              <div class="detail-row">
+                <table>
+                  <tr>
+                    <td>Booking Reference No</td>
+                    <td>Status</td>
+                  </tr>
+                  <tr>
+                    <td><strong><span class="reference-font">REF123456789</span></strong></td>
+                    <td><strong>Confirmed</strong></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+
+            <div class="success-btn-container">
+              <button onclick="location.reload()" class="back-details-btn">
+                View Booking Details
+              </button>
+              <button class="back-home-btn">
+                <a href="/Room-booking/index.html" class="back-link">Back to Home</a>
+              </button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

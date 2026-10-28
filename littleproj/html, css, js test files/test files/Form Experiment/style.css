@@ -1,0 +1,17 @@
+*{
+    margin: 5px 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+label, input, button, select{
+    width: 15%;
+}
+
+.box{
+    width: 20%;
+    display: inline-block;
+}

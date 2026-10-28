@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI';
+    background-image: url("/littleproj/Full-screen/Nike-shop/Main_interface/shoe-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /*para ang background di mo expand ug ahat*/
+    overflow-y: auto; /* maka scroll pa vertical */
+    min-height: 100vh;
+}
+
+
+nav{
+    padding: 10px 15px;
+    position: sticky;
+    top: 0;
+}
+
+img{
+    position: relative;
+    left: 13px;
+    width: 120px;
+}
+
+.brand-container{
+    display: inline-block;
+    /* animation: shrink 1s ease forwards;
+    animation-timeline: view();
+    animation-range: entry 0% exit 35%; */
+}
+
+/* @keyframes shrink {
+    from{
+        transform: scale(1);
+        opacity: 1;
+    }
+    to{
+        transform: scale(0);
+        opacity: 0;
+    }
+} */
+
+.link-container{
+    float: right;
+    position: relative;
+    top: 20px;
+    right: -5px;
+}
+
+.links{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    padding: 5px 17px;
+    font-weight: lighter;
+    font-size: larger;
+    transition: 0.3s ease;
+}
+
+.links:hover{
+    color: rgb(162, 162, 162);
+}
+
+.here{
+    color: rgb(162, 162, 162);;
+    text-decoration: none;
+    margin: 10px;
+    padding: 5px 17px;
+    font-weight: lighter;
+    font-size: larger;
+}
+
+.main-body{
+    padding: 20px;
+    margin: 3%;
+    color: white;
+    max-width: 650px;
+}
+
+.main-body p{
+    margin-top: -10px;
+    font-weight: 300;
+    font-size: 22px;
+    word-spacing: 1px;
+}
+
+.main-body h2{
+    font-weight: 600;
+    font-size: 27px;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 90px;
+    left: 300px;
+}
+
+.main-body .quote{
+    font-weight: 400;
+}
+
+.main-body .reasons{
+    margin-top: -20px;
+}
+
+.main-body .start-btn{
+    display: inline-block;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    padding: 5px 35px;
+    border-radius: 30px;
+    border: none;
+    font-size: large;
+    font-weight: 400;
+    margin-left: 10px;
+    transition: all 0.3s ease, background-color 0.3s ease, color 0.3s ease; 
+    position: relative;
+    top: 2px;
+}
+
+.main-body .start-btn:hover{
+    background-color: rgb(74, 74, 74);
+    color: white;
+    font-weight: 300;
+    transform: scale(1.1);
+}
+
+.start-btn-container {
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+/* LEZGOOOOOO HAHAHHAAHHAA */
